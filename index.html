@@ -2,26 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pig Latin</title>
+    <title></title>
   </head>
   <body>
     <div class="container">
-      <h1>Pig Latin</h1>
-
-      <form id="pig-latin">
+      <form>
         <div class="form-group">
-          <label for="input">Covert word to Pig Latin</label>
-          <textarea id="input" rows="10" type="text" class="form-control"></textarea>
+          <label for="textInput">Enter a word.</label>
+          <input type="text" class="form-control" id="textInput">
+          <button type="submit" class="btn btn-success">Translate</button>
         </div>
-        <button type="submit" class="btn">Submit</button>
       </form>
-
-      <div id="result" class="jumbotron">
-        <p><span class="output"></span></p>
+      <div id="results">
       </div>
     </div>
   </body>
